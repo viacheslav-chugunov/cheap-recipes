@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Дешевые рецепты</string>
+    <string name="all_recipes">Все</string>
+    <string name="favourites_recipes">Избранное</string>
+    <string name="add_to_favourites">Добавить в избанное</string>
+    <string name="remove_from_favourites">Убрать из избранного</string>
+</resources>
