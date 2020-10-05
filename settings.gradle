@@ -1,4 +1,2 @@
-include ':business'
-include ':data'
 include ':app'
-rootProject.name = "Cheap recipes"
+rootProject.name = "Сheap Recipes"

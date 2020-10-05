@@ -2,6 +2,18 @@
     <string name="app_name">Дешевые рецепты</string>
     <string name="all_recipes">Все</string>
     <string name="favourites_recipes">Избранное</string>
-    <string name="add_to_favourites">Добавить в избанное</string>
-    <string name="remove_from_favourites">Убрать из избранного</string>
+    <string name="remove_from_favourites">Удалить</string>
+    <string name="add_to_favourites">В избранное</string>
+
+    <!--  Admob  -->
+    <string name="ad_banner_app_id">ca-app-pub-6875098488739325~8495940725</string>
+    <string name="ad_banner_unit_id">ca-app-pub-6875098488739325/1978234452</string>
+
+    <string name="no_internet">Интернет отсутствует</string>
+    <string name="no_internet_title">Не удалось подключиться к интернету :(</string>
+    <string name="no_internet_description">Вы можете зайти в приложение в автономном режиме. В автономном режиме можно просматривать только рецепты, что были добавленны в избранное.</string>
+    <string name="no_internet_reconnect">Попробовать подключиться снова</string>
+    <string name="no_internet_log_in_offline">Войти в автономном режиме</string>
+    <string name="offline">Автономный режим</string>
+    <string name="search">Поиск</string>
 </resources>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.detail.DetailActivity" >
+    android:background="@drawable/background"
+    tools:context=".app.presentation.detail.DetailActivity" >
 
     <include
         layout="@layout/toolbar"
@@ -14,8 +15,9 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:orientation="vertical"
+        android:layout_weight="1"
         tools:context=".presentation.detail.DetailActivity">
 
         <LinearLayout
@@ -57,5 +59,11 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+    <fragment
+        android:id="@+id/ad_banner_fragment"
+        android:name="com.dev.cheaprecipes.app.presentation.ad.AdBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

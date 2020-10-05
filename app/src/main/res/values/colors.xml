@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFB211</color>
-    <color name="colorPrimaryDark">#e5a00f</color>
-    <color name="colorAccent">#FF3B11</color>
+    <color name="colorPrimary">#288046</color>
+    <color name="colorPrimaryDark">#206537</color>
+    <color name="colorAccent">#f5f5dc</color>
     <color name="windowBackground">#FFF9E5</color>
-    <color name="toolbar_control_normal">#FF3B11</color>
-    <color name="toolbar_text">#FF3B11</color>
-    <color name="category_text">#FF3B11</color>
-    <color name="split_text">#FF3B11</color>
-    <color name="shadow">#000000</color>
+    <color name="textShadow">#000000</color>
 </resources>

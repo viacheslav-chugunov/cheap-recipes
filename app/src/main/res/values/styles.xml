@@ -8,14 +8,14 @@
     </style>
 
     <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light">
-        <item name="colorControlNormal">@color/toolbar_control_normal</item>
-        <item name="titleTextColor">@color/toolbar_text</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="titleTextColor">@color/colorAccent</item>
     </style>
 
     <style name="TabText" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">@color/toolbar_text</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:shadowColor">@color/textShadow</item>
         <item name="android:shadowDx">2</item>
         <item name="android:shadowDy">2</item>
         <item name="android:shadowRadius">2</item>
@@ -23,30 +23,42 @@
 
     <style name="ToolbarText">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/toolbar_text</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:shadowColor">@color/textShadow</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="ToolbarEditText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/textShadow</item>
         <item name="android:shadowDx">2</item>
         <item name="android:shadowDy">2</item>
         <item name="android:shadowRadius">2</item>
     </style>
 
     <style name="SplitText">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/split_text</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:shadowColor">@color/textShadow</item>
         <item name="android:shadowDx">2</item>
         <item name="android:shadowDy">2</item>
         <item name="android:shadowRadius">2</item>
     </style>
 
     <style name="CategoryText">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/category_text</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:shadowColor">@color/textShadow</item>
         <item name="android:shadowDx">2</item>
         <item name="android:shadowDy">2</item>
         <item name="android:shadowRadius">2</item>
@@ -56,10 +68,34 @@
         <item name="android:textSize">18sp</item>
         <item name="android:layout_marginStart">8dp</item>
         <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:textColor">@color/windowBackground</item>
+        <item name="android:shadowColor">@color/windowBackground</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="ErrorMainText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/textShadow</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="ErrorDescriptionText" parent="ErrorMainText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ErrorButton" parent="Widget.AppCompat.Button.Colored">
+    <item name="android:elevation">6dp</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:translationZ">4dp</item>
+    <item name="android:background">@color/colorPrimary</item>
+    <item name="android:textColor">@color/colorAccent</item>
     </style>
 
 </resources>
