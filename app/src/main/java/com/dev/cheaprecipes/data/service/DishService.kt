@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface DishService {
 
-    @GET("raw/C75ZyU60")
+    @GET("raw/nrAiPiz9")
     suspend fun getDishes() : Response<List<DishModel>>
 }

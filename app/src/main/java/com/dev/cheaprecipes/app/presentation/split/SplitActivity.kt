@@ -6,6 +6,7 @@ import com.dev.cheaprecipes.R
 import com.dev.cheaprecipes.app.App
 import com.dev.cheaprecipes.app.presentation.error.NoInternetPermissionActivity
 import com.dev.cheaprecipes.app.presentation.main.MainActivity
+import com.dev.cheaprecipes.business.ad.InterstitialAd
 import com.dev.cheaprecipes.business.extensions.hasInternetPermission
 import com.dev.cheaprecipes.business.extensions.loadDishes
 import com.dev.cheaprecipes.business.extensions.startActivityAfterLoadingDishes
@@ -22,9 +23,12 @@ class SplitActivity : AppCompatActivity() {
         App.appComponent.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_split)
-        if (hasInternetPermission())
-            startActivityAfterLoadingDishes(loadDishes(repository), MainActivity::class.java)
-        else
+        if (hasInternetPermission()) {
+            val nextActivity: () -> Unit =
+                { startActivityAfterLoadingDishes(loadDishes(repository), MainActivity::class.java) }
+            InterstitialAd(this, nextActivity, nextActivity).run()
+        } else {
             startActivityInNewTask(NoInternetPermissionActivity::class.java)
+        }
     }
 }
