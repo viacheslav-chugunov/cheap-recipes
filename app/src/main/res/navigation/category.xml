@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category"
+    app:startDestination="@id/allCategoryFragment">
+
+    <fragment
+        android:id="@+id/allCategoryFragment"
+        android:name="com.dev.recipes.app.presentation.category.all.AllCategoryFragment"
+        android:label="fragment_all_category"
+        tools:layout="@layout/fragment_all_category">
+        <action
+            android:id="@+id/favouritesCategoryFragment"
+            app:destination="@id/favouritesCategoryFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:popUpTo="@id/category" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favouritesCategoryFragment"
+        android:name="com.dev.recipes.app.presentation.category.favourites.FavouritesCategoryFragment"
+        android:label="fragment_favourites_category"
+        tools:layout="@layout/fragment_favourites_category">
+        <action
+            android:id="@+id/allCategoryFragment"
+            app:destination="@id/allCategoryFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:popUpTo="@id/category" />
+    </fragment>
+
+</navigation>

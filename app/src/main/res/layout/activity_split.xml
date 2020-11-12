@@ -2,30 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".app.presentation.split.SplitActivity">
 
-    <ImageView
-        android:id="@+id/split_image"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:src="@drawable/app_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65999997" />
-
-    <TextView
-        android:id="@+id/split_title"
-        style="@style/SplitText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/split_image"
-        app:layout_constraintEnd_toEndOf="@+id/split_image"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/split_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>
